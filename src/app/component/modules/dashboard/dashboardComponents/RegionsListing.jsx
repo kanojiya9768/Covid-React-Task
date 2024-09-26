@@ -62,7 +62,7 @@ const RegionsListing = () => {
             </h1>
 
             {/* //cards  */}
-            <div className="grid sm:grid-cols-3 grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-3 grid-cols-1 lg:grid-cols-4  gap-2">
               {Regions?.slice(
                 Pagination?.currentPage * 20 - 20,
                 Pagination?.currentPage * 20
@@ -80,7 +80,7 @@ const RegionsListing = () => {
               })}
             </div>
 
-            <div>
+            <div className="grid place-items-center">
               <PaginationComponent
                 setActive={(activePage) =>
                   setPagination({ ...Pagination, currentPage: activePage })

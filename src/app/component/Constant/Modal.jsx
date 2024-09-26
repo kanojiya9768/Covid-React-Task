@@ -24,7 +24,7 @@ export function Modal({ openModal, setOpenModal, Component, ...props }) {
         <DialogBody className="w-full h-[100dvh]">
           {<Component {...props} />}
         </DialogBody>
-        <DialogFooter className="fixed bottom-4 right-4">
+        <DialogFooter className="fixed bottom-0 right-0">
           <Button
             color="red"
             onClick={handleOpen}

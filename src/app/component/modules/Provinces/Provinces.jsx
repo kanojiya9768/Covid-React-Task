@@ -3,8 +3,8 @@ import useCustomQueryHook from "@/app/lib/hooks/FetchApiHook";
 import { Option, Select } from "@material-tailwind/react";
 import { useCallback, useEffect, useState } from "react";
 import {
-    GetProvincenseByISOApiCall,
-    GetReportsApiCall,
+  GetProvincenseByISOApiCall,
+  GetReportsApiCall,
 } from "../../../../../utils/Apis/CovidApisFn";
 import MoreFiltersForm from "./ProvincesComponents/MoreFiltersForm";
 
@@ -63,10 +63,7 @@ const Provinces = ({ iso }) => {
 
   //custom hook which provide us response, loading , error , fetchData method or states
   const {} = useCustomQueryHook(ProvinceApiCallFunction);
-  const { loading, fetchData } = useCustomQueryHook(
-    ReportApiCallFunction,
-    allReports?.length > 0 ? true : false
-  );
+  const { loading, fetchData } = useCustomQueryHook(ReportApiCallFunction,allReports?.length > 0 ? true : false);
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -87,7 +84,10 @@ const Provinces = ({ iso }) => {
   };
   return (
     <div className="p-6">
-      <h1 className="text-lg my-2 text-primary-text-color font-medium">
+      <h1
+        className="my-2 font-semibold text-primary-text-color"
+        color="blue-gray"
+      >
         Choose Province
       </h1>
       <div className="flex gap-10 items-center">

@@ -10,7 +10,7 @@ const MoreFiltersForm = ({ filters, setFilter }) => {
   };
 
   return (
-    <div className="mb-1 grid grid-cols-4 gap-2 my-4">
+    <div className="mb-1 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 my-4">
       <div className="flex flex-col gap-6">
         <Typography variant="h6" color="blue-gray" className="-mb-3">
           Choose Date
@@ -63,7 +63,7 @@ const MoreFiltersForm = ({ filters, setFilter }) => {
           color="red"
           size="lg"
           placeholder="Search by Region Name"
-          label="REgion Name"
+          label="Region Name"
         />
       </div>
     </div>

@@ -7,12 +7,12 @@ const Dashboard = () => {
     <div className="p-6">
       <Heading
         headingClassName={
-          "text-3xl font-bold font-serif flex items-center gap-2"
+          "text-xl sm:text-3xl font-bold font-serif flex items-center gap-2"
         }
         heading={"Dashboard Management"}
         icon={{ icon: ChartBarIcon }}
         iconcLassName={
-          "w-16 h-16 bg-primary-theme-color text-primary-white-color p-2 rounded-full "
+          "sm:w-16 sm:h-16 h-12 w-12 bg-primary-theme-color text-primary-white-color p-2 rounded-full "
         }
       />
 
